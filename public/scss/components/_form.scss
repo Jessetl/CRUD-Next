@@ -1,0 +1,20 @@
+.form {
+  &-login {
+    padding: 4rem 0;
+  }
+
+  &-custom {
+    background-color: $gray;
+    border-radius: 50px;
+    padding-left: 1.5rem;
+
+    &::placeholder {
+      color: $dark-gray;
+      opacity: 1;
+    }
+
+    &:focus {
+      background-color: $gray;
+    }
+  }
+}

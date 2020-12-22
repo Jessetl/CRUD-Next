@@ -1,0 +1,41 @@
+.wrapper {
+  position: relative;
+
+  &-home {
+    height: 33rem;
+  }
+}
+
+.fluid-vh {
+  height: 100vh;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.content {
+  &-services {
+    padding: 1.8rem 0.8rem;
+    border: 2px solid $dark-green;
+    border-radius: 12px;
+  }
+}
+
+.paragraph {
+  max-height: 60px;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 0.8rem;
+}
+
+@include media-breakpoint-down(sm) {
+  .wrapper {
+    &-home {
+      height: 15rem;
+    }
+  }
+}

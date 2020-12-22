@@ -1,0 +1,24 @@
+.rounded {
+  &-button {
+    border-radius: 50px;
+    padding: 0.3rem 2.2rem;
+  }
+
+  &-select {
+    border-radius: 50px;
+  }
+
+  &-custom {
+    border-radius: 12px;
+
+    &::placeholder {
+      color: $black;
+    }
+  }
+}
+
+.outline {
+  &-none {
+    outline: none !important;
+  }
+}

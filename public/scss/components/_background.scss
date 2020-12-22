@@ -1,0 +1,21 @@
+.bg {
+  &-gray {
+    background-color: $gray !important;
+  }
+
+  &-dark {
+    background-color: $dark !important;
+  }
+
+  &-blue {
+    background-color: $blue !important;
+  }
+
+  &-green {
+    background-color: $green !important;
+  }
+}
+
+.opacity {
+  opacity: 0.8;
+}

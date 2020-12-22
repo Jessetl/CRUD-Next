@@ -1,0 +1,19 @@
+.text {
+  &-dark {
+    color: $dark-blue !important;
+  }
+
+  &-primary {
+    color: $blue !important;
+  }
+
+  &-black {
+    font-family: $font-family;
+    color: $black !important;
+  }
+
+  &-cyan {
+    font-family: $font-family;
+    color: $cyan !important;
+  }
+}

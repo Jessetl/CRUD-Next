@@ -1,0 +1,13 @@
+.banner {
+  height: 17rem;
+}
+
+@include media-breakpoint-down(sm) {
+  .banner {
+    height: 15rem;
+
+    div.background {
+      background-position: right !important;
+    }
+  }
+}

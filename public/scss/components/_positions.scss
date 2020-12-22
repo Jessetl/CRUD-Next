@@ -1,0 +1,39 @@
+.pickup {
+  &-upper {
+    &-left {
+      position: absolute;
+      z-index: 99;
+      bottom: -70px;
+    }
+  }
+
+  &-lower {
+    &-left {
+      position: absolute;
+      z-index: 99;
+      bottom: -70px;
+    }
+  }
+
+  &-middle {
+    &-right {
+      position: absolute;
+      z-index: 99;
+      bottom: 140px;
+      right: 0;
+    }
+  }
+}
+
+@include media-breakpoint-down(sm) {
+  .pickup {
+    &-middle {
+      &-right {
+        position: absolute;
+        z-index: 99;
+        bottom: 0;
+        right: 0;
+      }
+    }
+  }
+}

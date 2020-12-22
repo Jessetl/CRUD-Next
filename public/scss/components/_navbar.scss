@@ -1,0 +1,40 @@
+.navbar {
+  padding: 0;
+
+  &-brand {
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-right: 0;
+  }
+}
+
+.nav {
+  &-item {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 0.55rem;
+    padding-right: 0.55rem;
+
+    &.active {
+      border-bottom: 0.22rem solid $cyan;
+    }
+  }
+
+  &-footer {
+    display: flex;
+    justify-content: center;
+
+    .nav-item .nav-link {
+      font-size: 0.8rem;
+      line-height: 2;
+    }
+  }
+}
+
+@include media-breakpoint-down(sm) {
+  .nav {
+    &-footer {
+      justify-content: start;
+    }
+  }
+}

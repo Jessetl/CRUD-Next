@@ -1,0 +1,67 @@
+.btn {
+  &-primary {
+    font-family: $font-family;
+    font-size: 0.85rem;
+    background-color: $blue;
+
+    &:hover {
+      background-color: $blue;
+    }
+  }
+
+  &-outline {
+    &-secondary {
+      border-color: $gray;
+      border-radius: 12px;
+
+      &:not(:disabled):not(.disabled) {
+        &:active,
+        &.active {
+          border-color: $secondary;
+          background-color: $secondary;
+        }
+      }
+
+      &:hover {
+        border-color: $secondary;
+        background-color: $secondary;
+      }
+    }
+  }
+
+  &-small {
+    padding: 5px 8px;
+    font-size: 12px;
+    min-width: 30px;
+  }
+
+  &-secondary {
+    background-color: $secondary;
+    border-color: $secondary;
+
+    &:not(:disabled):not(.disabled) {
+      &:active,
+      &.active {
+        border-color: $secondary;
+        background-color: $secondary;
+      }
+    }
+
+    &:hover {
+      background-color: $secondary;
+      border-color: $secondary;
+    }
+  }
+
+  &.appointment {
+    width: 9rem;
+    font-weight: 100;
+    border-radius: 8px;
+
+    &-next {
+      width: 10rem;
+      border-radius: 18px;
+      font-weight: 100;
+    }
+  }
+}

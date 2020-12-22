@@ -1,0 +1,37 @@
+.font {
+  &-paragraph {
+    font-size: 0.8rem;
+  }
+
+  &-title {
+    &-footer {
+      font-size: 1rem;
+      color: $cyan;
+      padding: 1rem 0 0 0;
+    }
+  }
+}
+
+.size {
+  &-x {
+    &-md {
+      padding: 0 7rem;
+    }
+  }
+}
+
+.w {
+  &-90 {
+    width: 90%;
+  }
+}
+
+@include media-breakpoint-down(sm) {
+  .size {
+    &-x {
+      &-md {
+        padding: 0;
+      }
+    }
+  }
+}
